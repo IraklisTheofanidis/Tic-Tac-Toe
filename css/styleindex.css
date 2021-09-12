@@ -1,0 +1,95 @@
+@keyframes shape{
+    0%{transform: scale(1);}
+    50%{transform:scale(1.5);}
+    100%{transform:scale(1);}
+}
+
+
+body{margin:0px;padding:0px;width:100%;height:100%;background-color:black;}
+
+.game{
+    position:relative;
+    left:0;right:0;margin-left:auto;margin-right:auto;
+    top:10px;
+    height:350px;width:400px;
+   
+}
+
+.game .board{
+    width:100%;height:100%;
+    display:grid;
+    grid-template-columns: repeat(3,135px);
+    grid-template-rows: repeat(3,120px);
+    color:white; 
+    
+}
+
+.game .board .square{
+    display:flex;align-items:center;justify-content: center; font-weight: bold;font-family:"montserrat";cursor: pointer;
+}
+
+.game .board .square  img{
+    width:80px;height:80px;
+}
+
+.game .board .left{
+    border-right: solid; 
+}
+
+.game .board .top{
+    border-bottom: solid;
+    
+}
+
+.game .board .right{
+    border-left: solid;
+}
+
+.game .board .bottom{
+    border-top: solid;
+}
+
+#scores{
+    left:0;right:0;margin-left:auto;margin-right:auto;
+    color: white;
+    display:flex; 
+    justify-content: space-around;
+    text-align: center;
+    margin-top:30px;
+    width:400px;
+  
+   position:relative;
+   top:0px;
+   border-radius: 25px;
+    border: 2px solid white;
+;}
+
+
+
+#rest {
+    left:0;right:0;margin-left:auto;margin-right:auto;
+    width:400px;
+    position:relative;top:10px;display:flex;justify-content: center;gap:10px; 
+    
+}
+#rest #refresh{
+  
+}
+#rest button{
+    color:white;
+    background-color: black;
+    border: 1px solid white;
+    background:none;
+    padding:10px 20px;
+    font-size:20px;
+    font-family:"montserrat";
+    cursor:pointer;
+    color:white;
+    box-shadow: 0px 8px 15px white(129, 25, 25, 0.1);transition: all 0.3s ease 0s;
+}
+
+#rest button:hover{
+    transform: translateY(-5px);
+}
+
+
